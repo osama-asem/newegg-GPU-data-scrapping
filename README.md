@@ -1,0 +1,1 @@
+# newegg-GPU-data-scrapping
