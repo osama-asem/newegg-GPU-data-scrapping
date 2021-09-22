@@ -18,7 +18,7 @@ container_num = page_soup.findAll("span", {"class": "list-tool-pagination-text"}
 page_number = int(container_num[0].strong.text.replace("1/", ""))
 # next page to load
 next_page = 1
-file_name = "gpu_data.csv"
+file_name = "gpu_data.tsv"
 f = open(file_name, "w")
 headers = "brand\tproduct_name\tprice \n"
 f.write(headers)
