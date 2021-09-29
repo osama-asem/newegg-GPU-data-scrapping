@@ -13,7 +13,7 @@ page_html = uClient.read()
 uClient.close()
 page_soup = soup(page_html, "html.parser")
 
-# grab total page container
+# grab total page number
 container_num = page_soup.findAll("span", {"class": "list-tool-pagination-text"})
 page_number = int(container_num[0].strong.text.replace("1/", ""))
 # next page to load
